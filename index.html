@@ -2,245 +2,295 @@
 <html lang="pl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Transport bel siana – szukam przewoźników z firanką, Polska i UE | Patryk Barżykowski</title>
-<meta name="description" content="Szukam firm spedycyjnych i przewoźników z naczepami kurtynowymi (firankami) do transportu bel siana z całej Polski, także do krajów UE. Ładunek do 10 t. Tel. 666 658 020.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transport paszy dla zwierząt i bel siana – szukam przewoźników z firanką | Polska i UE</title>
+<meta name="description" content="Szukam firm spedycyjnych i przewoźników z naczepą kurtynową (firanką) do transportu suchej paszy dla zwierząt, m.in. bel siana. Załadunki z całej Polski, rozładunki w Polsce i UE, ładunek do 10 t. Tel. 666 658 020.">
+<meta name="theme-color" content="#1A1D1B">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:url" content="https://szukam-spedycji.github.io/">
+<meta property="og:title" content="Szukam przewoźników do transportu suchej paszy dla zwierząt">
+<meta property="og:description" content="Sucha pasza dla zwierząt, m.in. bele siana. Naczepa kurtynowa (firanka) 13,6 m, do 10 t. Załadunki z całej Polski, rozładunki w Polsce i UE. Tel. 666 658 020.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F2A900'/%3E%3Crect x='3' y='9' width='17' height='12' rx='1' fill='%23ECECE4' stroke='%23141414' stroke-width='1.6'/%3E%3Cpath d='M21 12.5h4.5l3.5 4V21h-8z' fill='%23141414'/%3E%3Crect x='3' y='20.5' width='26' height='2.5' fill='%23141414'/%3E%3Ccircle cx='8' cy='24' r='2.6' fill='%23141414'/%3E%3Ccircle cx='25' cy='24' r='2.6' fill='%23141414'/%3E%3C/svg%3E">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
 <style>
-/* Układ: nagłówek z kartą ładunku, pod nim ilustracja naczepy kurtynowej z belami, dalej sekcje i duże karty kontaktu */
+/* Układ: „asfalt + sygnałowy bursztyn”. Ciemny nagłówek z tablicą ładunku (jak giełda/tablica odjazdów) i rysunkiem technicznym
+   tira z wymiarem 13,6 m, pas ostrzegawczy, jasne sekcje z kwadratowymi ikonami i osią „drogi”, bursztynowy pas kontaktu jak znak drogowy */
 :root {
-  --bg: #F5F6F0; --surface: #FFFFFF; --soft: #ECEEE4; --fg: #1D2820; --muted: #59645B;
-  --line: #D9DDD0; --accent: #B8860B; --accent-ink: #1D2820;
-  --hay: #DDB04A; --hay-dark: #A9801F; --field: #C9CFA8; --glass: #BFD3D6;
-  --display: "Bahnschrift", "Arial Narrow", "Roboto Condensed", sans-serif;
-  --body: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, "Courier New", monospace;
+  --asphalt: #1A1D1B; --asphalt-2: #252926; --board: #0E100F; --board-line: #2B302C;
+  --amber: #F2A900; --amber-ink: #141414; --white-line: #ECECE4; --hero-muted: #A9AFA9; --bale-fill: #3A3221; --glass: #33424A;
+  --bg: #EDEFEC; --surface: #FFFFFF; --fg: #151816; --muted: #5A615C; --line: #D2D6D1; --accent-text: #8A5F00;
+  --display: "Arial Black", "Segoe UI Black", "Helvetica Neue", system-ui, sans-serif;
+  --body: system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --mono: ui-monospace, Consolas, "SF Mono", "Courier New", monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #131915; --surface: #1B231D; --soft: #202A23; --fg: #EBEEE4; --muted: #A3AD9F;
-  --line: #2F3A31; --accent: #E0B447; --accent-ink: #131915;
-  --hay: #C99A2E; --hay-dark: #8E6A17; --field: #34402F; --glass: #4E6669; color-scheme: dark } }
+  --bg: #141715; --surface: #1C201E; --fg: #ECEDE8; --muted: #A3A9A3; --line: #2E3430; --accent-text: #F2A900; color-scheme: dark } }
 :root[data-theme="dark"] {
-  --bg: #131915; --surface: #1B231D; --soft: #202A23; --fg: #EBEEE4; --muted: #A3AD9F;
-  --line: #2F3A31; --accent: #E0B447; --accent-ink: #131915;
-  --hay: #C99A2E; --hay-dark: #8E6A17; --field: #34402F; --glass: #4E6669; color-scheme: dark }
+  --bg: #141715; --surface: #1C201E; --fg: #ECEDE8; --muted: #A3A9A3; --line: #2E3430; --accent-text: #F2A900; color-scheme: dark }
 
 body { background: var(--bg); color: var(--fg); font: 400 1rem/1.6 var(--body); }
-.wrap { max-width: 68rem; margin: 0 auto; padding-inline: 20px; }
-.disp { font-family: var(--display); font-stretch: condensed; text-transform: uppercase; }
+.wrap { max-width: 72rem; margin: 0 auto; padding-inline: 20px; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
 
-header.top { border-bottom: 1px solid var(--line); }
-header.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 14px; flex-wrap: wrap; }
-.brand { font: 700 1.35rem/1 var(--display); font-stretch: condensed; letter-spacing: .02em; text-transform: uppercase; display: flex; align-items: center; gap: .5rem; }
-.brand .bt { color: var(--fg); }
-.brand .bt span { color: var(--accent); margin-inline: .35em; }
-.brand svg { width: 28px; height: 28px; flex: none; }
-.top a.btn { padding: .5rem 1rem; }
-
-.btn { display: inline-block; background: var(--accent); color: var(--accent-ink); font: 600 1rem/1.2 var(--body);
-  padding: .8rem 1.4rem; border-radius: 4px; text-decoration: none; }
-.btn:hover { filter: brightness(1.08); }
+/* przyciski */
+.btn { display: inline-flex; align-items: center; gap: .55rem; background: var(--amber); color: var(--amber-ink);
+  font: 700 .95rem/1.2 var(--body); letter-spacing: .03em; text-transform: uppercase; padding: .9rem 1.3rem; border-radius: 3px; text-decoration: none; border: 0; cursor: pointer; }
+.btn:hover { filter: brightness(1.07); }
 .btn.ghost { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--line); }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.copy { font: 600 .9rem var(--body); background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 3px; padding: .6rem .9rem; cursor: pointer; }
+.actions { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; }
+.eyebrow { font: 700 .74rem/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--accent-text); margin: 0; }
 
-.hero .grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; align-items: center; padding-block: 48px 8px; }
-.eyebrow { font: 600 .8rem/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-h1 { font: 700 clamp(2.4rem, 6vw, 4rem)/1 var(--display); font-stretch: condensed; text-transform: uppercase; margin: .6rem 0 1rem; text-wrap: balance; }
-h1 em { font-style: normal; color: var(--accent); }
-.lead { font-size: 1.15rem; color: var(--muted); max-width: 34rem; margin: 0 0 1.6rem; }
-.actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+/* nagłówek: asfalt */
+.hero { background: var(--asphalt); color: var(--white-line); }
+.hero .eyebrow { color: var(--amber); }
+.hero .btn.ghost { color: var(--white-line); box-shadow: inset 0 0 0 2px var(--hero-muted); }
+header.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--board-line); }
+.brand { font: 700 .82rem/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase; display: flex; align-items: center; gap: .7rem; }
+.brand .mark { width: 34px; height: 34px; flex: none; }
+.brand .dot { color: var(--amber); margin-inline: .4em; }
+.top .btn { padding: .6rem 1rem; }
 
-.waybill { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem 1.4rem; min-width: 0; }
-.waybill h2 { font: 700 1.1rem/1 var(--display); font-stretch: condensed; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 .9rem; }
-.waybill dl { display: grid; grid-template-columns: auto 1fr; margin: 0; }
-.waybill dt, .waybill dd { padding: .55rem 0; border-top: 1px dashed var(--line); margin: 0; }
-.waybill dt { color: var(--muted); font-size: .85rem; padding-right: 1rem; }
-.waybill dd { font: 500 .9rem/1.4 var(--mono); text-align: right; }
+.hero .grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center; padding-block: 44px 0; }
+.hero .grid > * { min-width: 0; }
+h1 { font: 900 clamp(2rem, 5vw, 3.7rem)/1.04 var(--display); text-transform: uppercase; letter-spacing: -.01em; margin: .9rem 0 1.2rem; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--amber); }
+.lead { font-size: 1.1rem; color: var(--hero-muted); max-width: 34rem; margin: 0 0 1.8rem; }
+.lead strong { color: var(--white-line); }
 
-.scene { display: block; width: 100%; max-width: 100%; height: auto; margin-top: 8px; }
-.scene .ink { fill: var(--fg); } .scene .surf { fill: var(--surface); stroke: var(--fg); stroke-width: 3; }
-.scene .pleat { stroke: var(--line); stroke-width: 2; } .scene .open { fill: var(--soft); }
-.scene .bale { fill: var(--hay); stroke: var(--hay-dark); stroke-width: 1.5; } .scene .band { stroke: var(--hay-dark); stroke-width: 1.2; opacity: .6; }
-.scene .glass { fill: var(--glass); } .scene .hub { fill: var(--bg); } .scene .field { fill: var(--field); }
-.scene .road { stroke: var(--muted); stroke-width: 2; stroke-dasharray: 18 14; }
-.scene .acc { fill: var(--accent); }
+/* tablica ładunku */
+.board { background: var(--board); border: 1px solid var(--board-line); border-radius: 4px; padding: 1rem 1.1rem .4rem; color: var(--amber);
+  font-family: var(--mono); box-shadow: 0 0 0 6px var(--asphalt-2); }
+.board .head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-bottom: .8rem; border-bottom: 1px solid var(--board-line); }
+.board h2 { font: 700 .85rem/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--white-line); margin: 0; }
+.board .rt { font: 700 .9rem/1 var(--mono); letter-spacing: .12em; color: var(--amber); white-space: nowrap; }
+.board dl { display: grid; grid-template-columns: auto 1fr; margin: 0; }
+.board dt, .board dd { padding: .62rem 0; border-bottom: 1px dashed var(--board-line); margin: 0; }
+.board dt { color: var(--hero-muted); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; padding-right: 1rem; align-self: center; }
+.board dd { text-align: right; font-size: .9rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.board dt:last-of-type, .board dd:last-of-type { border-bottom: 0; }
+
+/* rysunek techniczny tira */
+.rig { display: block; width: 100%; height: auto; margin-top: 2.6rem; }
+.rig .dim line { stroke: var(--hero-muted); stroke-width: 2; }
+.rig .dim text { fill: var(--white-line); font: 700 22px var(--mono); }
+.rig .tag rect { fill: var(--amber); } .rig .tag text { fill: var(--amber-ink); font: 700 20px var(--mono); }
+.rig .road-edge { stroke: var(--white-line); stroke-width: 3; opacity: .65; }
+.rig .road-dash { stroke: var(--white-line); stroke-width: 4; stroke-dasharray: 40 30; opacity: .5; }
+.tr .surf { fill: var(--asphalt-2); stroke: var(--white-line); stroke-width: 3; }
+.tr .open { fill: var(--board); }
+.tr .bale { fill: var(--bale-fill); stroke: var(--amber); stroke-width: 1.5; } .tr .band { stroke: var(--amber); stroke-width: 1.2; opacity: .5; }
+.tr .pleat { stroke: var(--white-line); stroke-width: 2; opacity: .25; }
+.tr rect.ink { fill: var(--white-line); opacity: .85; }
+.tr circle.ink { fill: var(--board); stroke: var(--white-line); stroke-width: 3; }
+.tr .hub { fill: none; stroke: var(--amber); stroke-width: 3; }
+.tr .glass { fill: var(--glass); stroke: var(--white-line); stroke-width: 2; } .tr .acc { fill: var(--amber); }
 @media (prefers-reduced-motion: no-preference) {
-  .scene .truck { animation: roll 1.2s ease-out both; }
-  @keyframes roll { from { transform: translateX(-40px); } to { transform: none; } }
+  .rig .drive { animation: drive 1.6s cubic-bezier(.2, .7, .25, 1) both; }
+  @keyframes drive { from { transform: translateX(-320px); opacity: .4; } to { transform: none; opacity: 1; } }
 }
+.hazard { height: 14px; background: repeating-linear-gradient(-45deg, var(--amber) 0 14px, var(--asphalt) 14px 28px); }
 
-section.block { padding-block: 48px; border-top: 1px solid var(--line); }
-h2.sec { font: 700 clamp(1.7rem, 4vw, 2.3rem)/1.05 var(--display); font-stretch: condensed; text-transform: uppercase; margin: 0 0 1.4rem; text-wrap: balance; }
-.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.cols > div { min-width: 0; }
-.cols svg { width: 48px; height: 48px; display: block; margin-bottom: .7rem; }
-.cols svg .i-line { fill: none; stroke: var(--fg); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-.cols svg .i-acc { fill: var(--accent); }
-.cols h3 { font: 600 1.05rem/1.3 var(--body); margin: 0 0 .4rem; }
-.cols p { margin: 0; color: var(--muted); }
+/* sekcje */
+section.block { padding-block: 68px; }
+h2.sec { font: 900 clamp(1.6rem, 3.6vw, 2.4rem)/1.06 var(--display); text-transform: uppercase; letter-spacing: -.005em; margin: .7rem 0 .9rem; text-wrap: balance; }
+.intro { color: var(--muted); margin: 0 0 2rem; max-width: 40rem; }
+.sq { width: 48px; height: 48px; background: var(--asphalt); border-radius: 2px; display: grid; place-items: center; flex: none; }
+.sq svg { width: 26px; height: 26px; fill: none; stroke: var(--amber); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
-.load { display: grid; grid-template-columns: 1fr; }
-.load > * { min-width: 0; }
-.specs { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; min-width: 22rem; font-variant-numeric: tabular-nums; }
-th, td { text-align: left; padding: .7rem .8rem; border-bottom: 1px solid var(--line); }
-th { font: 600 .75rem/1 var(--body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
-td.num { font-family: var(--mono); font-size: .9rem; }
-.bales { width: 220px; max-width: 100%; height: auto; }
-.bales .hay { fill: var(--hay); } .bales .ring { fill: none; stroke: var(--hay-dark); stroke-width: 2; }
-.bales .dim { stroke: var(--muted); stroke-width: 1.5; fill: none; } .bales text { fill: var(--muted); font: 500 13px var(--mono); }
+.feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1.8rem; }
+.feat { display: grid; gap: .6rem; align-content: start; padding-top: 1.3rem; border-top: 3px solid var(--fg); min-width: 0; }
+.feat h3 { font: 700 1.08rem/1.3 var(--body); margin: .3rem 0 0; }
+.feat p { margin: 0; color: var(--muted); }
 
-ol.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; counter-reset: s; }
-ol.steps li { counter-increment: s; min-width: 0; }
-ol.steps li::before { content: counter(s); display: block; font: 700 2.2rem/1 var(--display); color: var(--accent); margin-bottom: .4rem; }
-ol.steps b { display: block; margin-bottom: .25rem; }
+.specs { display: grid; grid-template-columns: repeat(2, minmax(0, 22rem)); gap: 1rem; }
+.spec { background: var(--surface); border: 1px solid var(--line); border-radius: 3px; padding: 1.3rem; display: grid; gap: .6rem; justify-items: start; }
+.spec .k { font: 700 .72rem/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
+.spec .d { font: 900 2.2rem/1 var(--display); font-variant-numeric: tabular-nums; }
+.spec .w { font: 700 .88rem/1.2 var(--mono); background: var(--asphalt); color: var(--amber); border-radius: 2px; padding: .35rem .6rem; }
+
+.faq { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 2.5rem; margin-top: 1.6rem; }
+.faq > div { padding-block: 1.2rem; border-top: 1px solid var(--line); min-width: 0; }
+.faq h3 { font: 700 1.05rem/1.35 var(--body); margin: 0 0 .4rem; }
+.faq p { margin: 0; color: var(--muted); }
+
+/* kroki na „drodze” */
+ol.steps { list-style: none; margin: 0; padding: 2.4rem 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.8rem; position: relative; counter-reset: s; }
+ol.steps::before { content: ""; position: absolute; top: 11px; left: 0; right: 0; height: 5px;
+  background: repeating-linear-gradient(90deg, var(--fg) 0 26px, transparent 26px 44px); opacity: .8; }
+ol.steps li { counter-increment: s; position: relative; min-width: 0; display: grid; gap: .3rem; align-content: start; }
+ol.steps li::before { content: counter(s, decimal-leading-zero); position: absolute; top: -2.4rem; left: 0; width: 28px; height: 28px;
+  background: var(--amber); color: var(--amber-ink); font: 700 .8rem/28px var(--mono); text-align: center; border-radius: 2px; }
+ol.steps .sq { margin-bottom: .5rem; }
+ol.steps b { font-size: 1.05rem; }
 ol.steps span { color: var(--muted); }
 
-.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.4rem; display: grid; gap: .8rem; min-width: 0; }
-.card .lbl { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
-.card .val { font: 600 clamp(1.3rem, 3.5vw, 1.7rem)/1.2 var(--mono); word-break: break-all; }
-.card .row { display: flex; gap: .6rem; flex-wrap: wrap; }
-.copy { font: 600 .9rem var(--body); background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 4px; padding: .55rem .9rem; cursor: pointer; }
-.who { color: var(--muted); margin: -.6rem 0 1.4rem; }
+/* kontakt: znak drogowy */
+.band { background: var(--amber); color: var(--amber-ink); padding-block: 84px 72px; position: relative; }
+.band::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 14px;
+  background: repeating-linear-gradient(-45deg, var(--asphalt) 0 14px, var(--amber) 14px 28px); }
+.band .eyebrow { color: var(--amber-ink); }
+.band h2.sec { color: var(--amber-ink); }
+.bignum { display: inline-block; font: 900 clamp(2.5rem, 9vw, 5.4rem)/1 var(--display); color: var(--amber-ink); text-decoration: none;
+  letter-spacing: -.01em; margin: .2rem 0 1.4rem; font-variant-numeric: tabular-nums; }
+.band .btn { background: var(--asphalt); color: var(--white-line); }
+.band .btn.line { background: transparent; color: var(--amber-ink); box-shadow: inset 0 0 0 2px var(--amber-ink); }
+.band .copy { color: var(--amber-ink); border-color: var(--amber-ink); }
+.mailrow { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-top: 2rem; padding-top: 1.4rem; border-top: 2px solid var(--amber-ink); }
+.mailrow .lbl { font: 700 .74rem var(--mono); text-transform: uppercase; letter-spacing: .14em; }
+.mailrow #mail { font: 700 1.15rem var(--mono); word-break: break-all; }
+.mailrow a { color: var(--amber-ink); font-weight: 700; }
+.who { margin: 1.2rem 0 0; opacity: .78; }
 
-footer { border-top: 1px solid var(--line); padding-block: 24px; color: var(--muted); font-size: .85rem; }
+footer { padding-block: 26px; color: var(--muted); font-size: .85rem; }
 footer .wrap { display: grid; gap: .4rem; }
 
-@media (max-width: 820px) {
-  .hero .grid { grid-template-columns: 1fr; gap: 2rem; }
-  .cols { grid-template-columns: 1fr; gap: 1.5rem; }
-  ol.steps { grid-template-columns: 1fr 1fr; }
-  .load { grid-template-columns: 1fr; }
-  .bales { justify-self: center; }
+.callbar { display: none; }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 20;
+  width: max-content; max-width: calc(100% - 32px); box-sizing: border-box; background: var(--asphalt); color: var(--white-line);
+  border-left: 4px solid var(--amber); padding: .85rem 1.2rem; border-radius: 3px; font-weight: 600; text-align: center; }
+
+@media (max-width: 900px) {
+  .hero .grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .feats { grid-template-columns: 1fr; gap: 1.6rem; }
+  .faq { grid-template-columns: 1fr; }
+  ol.steps { grid-template-columns: 1fr; padding: 0 0 0 3rem; gap: 1.8rem; }
+  ol.steps::before { top: 0; bottom: 0; left: 11px; right: auto; width: 5px; height: auto;
+    background: repeating-linear-gradient(180deg, var(--fg) 0 22px, transparent 22px 36px); }
+  ol.steps li::before { top: 0; left: -3rem; }
 }
-@media (max-width: 520px) {
+@media (max-width: 640px) {
   .wrap { padding-inline: 16px; }
-  ol.steps, .cards { grid-template-columns: 1fr; }
+  body { padding-bottom: 78px; }
+  .specs { grid-template-columns: 1fr 1fr; }
+  .callbar { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: var(--asphalt); border-top: 3px solid var(--amber); }
+  .callbar .btn { justify-content: center; }
+  .callbar .btn.ghost { color: var(--white-line); box-shadow: inset 0 0 0 2px var(--hero-muted); }
+  .top .btn { display: none; }
+  .toast { bottom: calc(90px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width: 380px) {
+  .specs { grid-template-columns: 1fr; }
 }
 </style>
 
-<header class="top">
-  <div class="wrap">
-    <div class="brand">
-      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="var(--hay)"/><circle cx="14" cy="14" r="8.5" fill="none" stroke="var(--hay-dark)" stroke-width="1.8"/><circle cx="14" cy="14" r="4" fill="none" stroke="var(--hay-dark)" stroke-width="1.8"/></svg>
-      <span class="bt">Przewóz paszy<span>·</span>Bele siana<span>·</span>Transport</span>
+<div class="hero">
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#F2A900"/><rect x="3" y="9" width="17" height="12" rx="1" fill="#ECECE4" stroke="#141414" stroke-width="1.6"/><path d="M21 12.5h4.5l3.5 4V21h-8z" fill="#141414"/><rect x="3" y="20.5" width="26" height="2.5" fill="#141414"/><circle cx="8" cy="24" r="2.6" fill="#141414"/><circle cx="25" cy="24" r="2.6" fill="#141414"/></svg>
+        <span>Przewóz paszy<span class="dot">·</span>Szukam spedycji i przewoźnika<span class="dot">·</span>Transport</span>
+      </div>
+      <a class="btn" href="#kontakt">Kontakt</a>
     </div>
-    <a class="btn" href="#kontakt">Kontakt</a>
+  </header>
+
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="eyebrow">Dla firm spedycyjnych i przewoźników</p>
+        <h1>Szukam przewoźników do <em>transportu suchej paszy dla zwierząt</em></h1>
+        <p class="lead">Wysyłam suchą paszę dla zwierząt, m.in. bele siana, z terenu całej Polski. Szukam stałych partnerów z <strong>naczepami kurtynowymi (firankami)</strong> do przewozów krajowych i międzynarodowych na terenie Unii Europejskiej. Ładunek lekki: do 10 ton.</p>
+        <div class="actions">
+          <a class="btn" href="tel:+48666658020"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>666 658 020</a>
+          <a class="btn ghost" href="#wspolpraca">Jak to działa</a>
+        </div>
+      </div>
+
+      <aside class="board" aria-label="Przykładowy ładunek">
+        <div class="head"><h2>Przykładowy ładunek</h2><span class="rt" aria-label="z Polski do krajów UE">PL ▸ UE</span></div>
+        <dl>
+          <dt>Towar</dt><dd>bele siana</dd>
+          <dt>Załadunek</dt><dd>cała Polska</dd>
+          <dt>Rozładunek</dt><dd>Polska i kraje UE</dd>
+          <dt>Pojazd</dt><dd>naczepa kurtynowa 13,6 m</dd>
+          <dt>Naczepa</dt><dd>czysta i sucha</dd>
+          <dt>Masa</dt><dd>do 10 t</dd>
+        </dl>
+      </aside>
+    </div>
+
+    <svg class="rig" viewBox="20 -50 900 310" role="img" aria-label="Rysunek ciągnika z naczepą kurtynową o długości 13,6 m; kurtyna odsunięta, w środku bele siana ustawione na stojąco w dwóch warstwach; masa ładunku do 10 t">
+      <g class="dim">
+        <line x1="60" y1="-12" x2="740" y2="-12"/><line x1="60" y1="-24" x2="60" y2="0"/><line x1="740" y1="-24" x2="740" y2="0"/>
+        <text x="400" y="-22" text-anchor="middle">13,6 m</text>
+      </g>
+      <g class="tag"><rect x="772" y="-42" width="112" height="32" rx="3"/><text x="828" y="-19" text-anchor="middle">≤ 10 t</text></g>
+      <line class="road-edge" x1="20" y1="222" x2="920" y2="222"/>
+      <line class="road-dash" x1="20" y1="248" x2="920" y2="248"/>
+      <g class="drive tr">
+      <rect class="surf" x="60" y="22" width="680" height="138" rx="3"/>
+      <rect class="open" x="62" y="24" width="676" height="134"/>
+      <rect class="bale" x="62.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="62.5" y1="56" x2="122.5" y2="56"/><line class="band" x1="62.5" y1="76" x2="122.5" y2="76"/>
+      <rect class="bale" x="124" y="36" width="60" height="60" rx="5"/><line class="band" x1="124" y1="56" x2="184" y2="56"/><line class="band" x1="124" y1="76" x2="184" y2="76"/>
+      <rect class="bale" x="185.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="185.5" y1="56" x2="245.5" y2="56"/><line class="band" x1="185.5" y1="76" x2="245.5" y2="76"/>
+      <rect class="bale" x="247" y="36" width="60" height="60" rx="5"/><line class="band" x1="247" y1="56" x2="307" y2="56"/><line class="band" x1="247" y1="76" x2="307" y2="76"/>
+      <rect class="bale" x="308.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="308.5" y1="56" x2="368.5" y2="56"/><line class="band" x1="308.5" y1="76" x2="368.5" y2="76"/>
+      <rect class="bale" x="370" y="36" width="60" height="60" rx="5"/><line class="band" x1="370" y1="56" x2="430" y2="56"/><line class="band" x1="370" y1="76" x2="430" y2="76"/>
+      <rect class="bale" x="431.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="431.5" y1="56" x2="491.5" y2="56"/><line class="band" x1="431.5" y1="76" x2="491.5" y2="76"/>
+      <rect class="bale" x="493" y="36" width="60" height="60" rx="5"/><line class="band" x1="493" y1="56" x2="553" y2="56"/><line class="band" x1="493" y1="76" x2="553" y2="76"/>
+      <rect class="bale" x="554.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="554.5" y1="56" x2="614.5" y2="56"/><line class="band" x1="554.5" y1="76" x2="614.5" y2="76"/>
+      <rect class="bale" x="616" y="36" width="60" height="60" rx="5"/><line class="band" x1="616" y1="56" x2="676" y2="56"/><line class="band" x1="616" y1="76" x2="676" y2="76"/>
+      <rect class="bale" x="677.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="677.5" y1="56" x2="737.5" y2="56"/><line class="band" x1="677.5" y1="76" x2="737.5" y2="76"/>
+      <rect class="bale" x="62.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="62.5" y1="117" x2="122.5" y2="117"/><line class="band" x1="62.5" y1="137" x2="122.5" y2="137"/>
+      <rect class="bale" x="124" y="97" width="60" height="60" rx="5"/><line class="band" x1="124" y1="117" x2="184" y2="117"/><line class="band" x1="124" y1="137" x2="184" y2="137"/>
+      <rect class="bale" x="185.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="185.5" y1="117" x2="245.5" y2="117"/><line class="band" x1="185.5" y1="137" x2="245.5" y2="137"/>
+      <rect class="bale" x="247" y="97" width="60" height="60" rx="5"/><line class="band" x1="247" y1="117" x2="307" y2="117"/><line class="band" x1="247" y1="137" x2="307" y2="137"/>
+      <rect class="bale" x="308.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="308.5" y1="117" x2="368.5" y2="117"/><line class="band" x1="308.5" y1="137" x2="368.5" y2="137"/>
+      <rect class="bale" x="370" y="97" width="60" height="60" rx="5"/><line class="band" x1="370" y1="117" x2="430" y2="117"/><line class="band" x1="370" y1="137" x2="430" y2="137"/>
+      <rect class="bale" x="431.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="431.5" y1="117" x2="491.5" y2="117"/><line class="band" x1="431.5" y1="137" x2="491.5" y2="137"/>
+      <rect class="bale" x="493" y="97" width="60" height="60" rx="5"/><line class="band" x1="493" y1="117" x2="553" y2="117"/><line class="band" x1="493" y1="137" x2="553" y2="137"/>
+      <rect class="bale" x="554.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="554.5" y1="117" x2="614.5" y2="117"/><line class="band" x1="554.5" y1="137" x2="614.5" y2="137"/>
+      <rect class="bale" x="616" y="97" width="60" height="60" rx="5"/><line class="band" x1="616" y1="117" x2="676" y2="117"/><line class="band" x1="616" y1="137" x2="676" y2="137"/>
+      <rect class="bale" x="677.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="677.5" y1="117" x2="737.5" y2="117"/><line class="band" x1="677.5" y1="137" x2="737.5" y2="137"/>
+      <rect class="surf" x="60" y="22" width="126" height="138"/>
+      <line class="pleat" x1="74" y1="25" x2="74" y2="157"/>
+      <line class="pleat" x1="88" y1="25" x2="88" y2="157"/>
+      <line class="pleat" x1="102" y1="25" x2="102" y2="157"/>
+      <line class="pleat" x1="116" y1="25" x2="116" y2="157"/>
+      <line class="pleat" x1="130" y1="25" x2="130" y2="157"/>
+      <line class="pleat" x1="144" y1="25" x2="144" y2="157"/>
+      <line class="pleat" x1="158" y1="25" x2="158" y2="157"/>
+      <line class="pleat" x1="172" y1="25" x2="172" y2="157"/>
+      <rect class="ink" x="184" y="24" width="9" height="134" rx="3"/>
+      <rect class="ink" x="60" y="160" width="712" height="8" rx="2"/>
+      <rect class="ink" x="700" y="172" width="190" height="10" rx="2"/>
+      <path class="surf" d="M762 178 V38 Q762 28 772 28 H870 Q882 28 883 40 L888 120 V178 Z"/>
+      <rect class="glass" x="800" y="48" width="66" height="52" rx="4"/>
+      <rect class="acc" x="764" y="138" width="122" height="8"/>
+      <circle class="ink" cx="180" cy="195" r="25"/><circle class="hub" cx="180" cy="195" r="10"/>
+      <circle class="ink" cx="245" cy="195" r="25"/><circle class="hub" cx="245" cy="195" r="10"/>
+      <circle class="ink" cx="310" cy="195" r="25"/><circle class="hub" cx="310" cy="195" r="10"/>
+      <circle class="ink" cx="725" cy="195" r="25"/><circle class="hub" cx="725" cy="195" r="10"/>
+      <circle class="ink" cx="852" cy="195" r="25"/><circle class="hub" cx="852" cy="195" r="10"/>
+      </g>
+    </svg>
   </div>
-</header>
+  <div class="hazard" aria-hidden="true"></div>
+</div>
 
 <main>
-  <section class="hero">
-    <div class="wrap">
-      <div class="grid">
-        <div>
-          <p class="eyebrow">Dla firm spedycyjnych i przewoźników</p>
-          <h1>Szukam przewoźników do <em>transportu bel siana</em></h1>
-          <p class="lead">Wysyłam bele siana dla zwierząt z terenu całej Polski. Szukam stałych partnerów z <strong>naczepami kurtynowymi (firankami)</strong> do przewozów krajowych i międzynarodowych na terenie Unii Europejskiej. Ładunek lekki: do 10 ton.</p>
-          <div class="actions">
-            <a class="btn" href="tel:+48666658020">Zadzwoń: 666 658 020</a>
-            <a class="btn ghost" href="#ladunek">Zobacz ładunek</a>
-          </div>
-        </div>
-
-        <aside class="waybill" aria-label="Karta ładunku">
-          <h2>Karta ładunku</h2>
-          <dl>
-            <dt>Towar</dt><dd>bele siana</dd>
-            <dt>Załadunek</dt><dd>cała Polska</dd>
-            <dt>Rozładunek</dt><dd>Polska i kraje UE</dd>
-            <dt>Pojazd</dt><dd>naczepa kurtynowa 13,6 m, czysta i sucha</dd>
-            <dt>Masa ładunku</dt><dd>do 10 t</dd>
-            <dt>Bele</dt><dd>Ø 1,20 m / Ø 1,30 m</dd>
-          </dl>
-        </aside>
-      </div>
-
-      <svg class="scene" viewBox="0 0 1000 240" role="img" aria-label="Ciągnik z naczepą kurtynową 13,6 m, kurtyna odsunięta, 44 bele siana Ø 1,20 m ustawione na stojąco w dwóch warstwach">
-        <rect class="field" x="0" y="220" width="1000" height="20"/>
-        <line class="road" x1="0" y1="231" x2="1000" y2="231"/>
-        <g transform="translate(54 0)"><g class="truck">
-          <rect class="surf" x="60" y="22" width="680" height="138" rx="3"/>
-          <rect class="open" x="62" y="24" width="676" height="134"/>
-          <rect class="bale" x="62.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="62.5" y1="56" x2="122.5" y2="56"/><line class="band" x1="62.5" y1="76" x2="122.5" y2="76"/>
-          <rect class="bale" x="124" y="36" width="60" height="60" rx="5"/><line class="band" x1="124" y1="56" x2="184" y2="56"/><line class="band" x1="124" y1="76" x2="184" y2="76"/>
-          <rect class="bale" x="185.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="185.5" y1="56" x2="245.5" y2="56"/><line class="band" x1="185.5" y1="76" x2="245.5" y2="76"/>
-          <rect class="bale" x="247" y="36" width="60" height="60" rx="5"/><line class="band" x1="247" y1="56" x2="307" y2="56"/><line class="band" x1="247" y1="76" x2="307" y2="76"/>
-          <rect class="bale" x="308.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="308.5" y1="56" x2="368.5" y2="56"/><line class="band" x1="308.5" y1="76" x2="368.5" y2="76"/>
-          <rect class="bale" x="370" y="36" width="60" height="60" rx="5"/><line class="band" x1="370" y1="56" x2="430" y2="56"/><line class="band" x1="370" y1="76" x2="430" y2="76"/>
-          <rect class="bale" x="431.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="431.5" y1="56" x2="491.5" y2="56"/><line class="band" x1="431.5" y1="76" x2="491.5" y2="76"/>
-          <rect class="bale" x="493" y="36" width="60" height="60" rx="5"/><line class="band" x1="493" y1="56" x2="553" y2="56"/><line class="band" x1="493" y1="76" x2="553" y2="76"/>
-          <rect class="bale" x="554.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="554.5" y1="56" x2="614.5" y2="56"/><line class="band" x1="554.5" y1="76" x2="614.5" y2="76"/>
-          <rect class="bale" x="616" y="36" width="60" height="60" rx="5"/><line class="band" x1="616" y1="56" x2="676" y2="56"/><line class="band" x1="616" y1="76" x2="676" y2="76"/>
-          <rect class="bale" x="677.5" y="36" width="60" height="60" rx="5"/><line class="band" x1="677.5" y1="56" x2="737.5" y2="56"/><line class="band" x1="677.5" y1="76" x2="737.5" y2="76"/>
-          <rect class="bale" x="62.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="62.5" y1="117" x2="122.5" y2="117"/><line class="band" x1="62.5" y1="137" x2="122.5" y2="137"/>
-          <rect class="bale" x="124" y="97" width="60" height="60" rx="5"/><line class="band" x1="124" y1="117" x2="184" y2="117"/><line class="band" x1="124" y1="137" x2="184" y2="137"/>
-          <rect class="bale" x="185.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="185.5" y1="117" x2="245.5" y2="117"/><line class="band" x1="185.5" y1="137" x2="245.5" y2="137"/>
-          <rect class="bale" x="247" y="97" width="60" height="60" rx="5"/><line class="band" x1="247" y1="117" x2="307" y2="117"/><line class="band" x1="247" y1="137" x2="307" y2="137"/>
-          <rect class="bale" x="308.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="308.5" y1="117" x2="368.5" y2="117"/><line class="band" x1="308.5" y1="137" x2="368.5" y2="137"/>
-          <rect class="bale" x="370" y="97" width="60" height="60" rx="5"/><line class="band" x1="370" y1="117" x2="430" y2="117"/><line class="band" x1="370" y1="137" x2="430" y2="137"/>
-          <rect class="bale" x="431.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="431.5" y1="117" x2="491.5" y2="117"/><line class="band" x1="431.5" y1="137" x2="491.5" y2="137"/>
-          <rect class="bale" x="493" y="97" width="60" height="60" rx="5"/><line class="band" x1="493" y1="117" x2="553" y2="117"/><line class="band" x1="493" y1="137" x2="553" y2="137"/>
-          <rect class="bale" x="554.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="554.5" y1="117" x2="614.5" y2="117"/><line class="band" x1="554.5" y1="137" x2="614.5" y2="137"/>
-          <rect class="bale" x="616" y="97" width="60" height="60" rx="5"/><line class="band" x1="616" y1="117" x2="676" y2="117"/><line class="band" x1="616" y1="137" x2="676" y2="137"/>
-          <rect class="bale" x="677.5" y="97" width="60" height="60" rx="5"/><line class="band" x1="677.5" y1="117" x2="737.5" y2="117"/><line class="band" x1="677.5" y1="137" x2="737.5" y2="137"/>
-          <rect class="surf" x="60" y="22" width="126" height="138"/>
-          <line class="pleat" x1="74" y1="25" x2="74" y2="157"/>
-          <line class="pleat" x1="88" y1="25" x2="88" y2="157"/>
-          <line class="pleat" x1="102" y1="25" x2="102" y2="157"/>
-          <line class="pleat" x1="116" y1="25" x2="116" y2="157"/>
-          <line class="pleat" x1="130" y1="25" x2="130" y2="157"/>
-          <line class="pleat" x1="144" y1="25" x2="144" y2="157"/>
-          <line class="pleat" x1="158" y1="25" x2="158" y2="157"/>
-          <line class="pleat" x1="172" y1="25" x2="172" y2="157"/>
-          <rect class="ink" x="184" y="24" width="9" height="134" rx="3"/>
-          <rect class="ink" x="60" y="160" width="712" height="8" rx="2"/>
-          <rect class="ink" x="700" y="172" width="190" height="10" rx="2"/>
-          <path class="surf" d="M762 178 V38 Q762 28 772 28 H870 Q882 28 883 40 L888 120 V178 Z"/>
-          <rect class="glass" x="800" y="48" width="66" height="52" rx="4"/>
-          <rect class="acc" x="764" y="138" width="122" height="8"/>
-          <circle class="ink" cx="180" cy="195" r="25"/><circle class="hub" cx="180" cy="195" r="10"/>
-          <circle class="ink" cx="245" cy="195" r="25"/><circle class="hub" cx="245" cy="195" r="10"/>
-          <circle class="ink" cx="310" cy="195" r="25"/><circle class="hub" cx="310" cy="195" r="10"/>
-          <circle class="ink" cx="725" cy="195" r="25"/><circle class="hub" cx="725" cy="195" r="10"/>
-          <circle class="ink" cx="852" cy="195" r="25"/><circle class="hub" cx="852" cy="195" r="10"/>
-        </g></g>
-      </svg>
-    </div>
-  </section>
-
   <section class="block" id="oferta">
     <div class="wrap">
+      <p class="eyebrow">Dla przewoźnika</p>
       <h2 class="sec">Co oferuję przewoźnikom</h2>
-      <div class="cols">
-        <div>
-          <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="i-acc" cx="12" cy="36" r="5"/><circle class="i-acc" cx="36" cy="12" r="5"/><path class="i-line" d="M12 31 V24 Q12 20 16 20 H32 Q36 20 36 16 V17"/></svg>
+      <div class="feats">
+        <div class="feat">
+          <span class="sq"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M6 15.5V13a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V8.5"/></svg></span>
           <h3>Kursy w Polsce i w UE</h3><p>Załadunki w różnych częściach kraju, rozładunki w Polsce i w krajach Unii. Zależy mi na stałej współpracy.</p>
         </div>
-        <div>
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path class="i-line" d="M10 40 L15 18 H33 L38 40 Z"/><circle class="i-line" cx="24" cy="12" r="5"/><text x="24" y="35" text-anchor="middle" style="font:700 11px var(--mono);fill:var(--accent)">10t</text></svg>
+        <div class="feat">
+          <span class="sq"><svg viewBox="0 0 24 24"><path d="M4.5 20 7.5 9h9l3 11z"/><circle cx="12" cy="6" r="2.2"/></svg></span>
           <h3>Lekki ładunek</h3><p>Do 10 ton na naczepie, załadunek bokiem po rozsunięciu kurtyny. Auto nie czeka godzinami.</p>
         </div>
-        <div>
-          <svg viewBox="0 0 48 48" aria-hidden="true"><rect class="i-line" x="14" y="6" width="20" height="36" rx="4"/><circle class="i-acc" cx="24" cy="35" r="2.5"/><path class="i-line" d="M38 14 Q42 18 38 22 M41 10 Q48 18 41 26"/></svg>
+        <div class="feat">
+          <span class="sq"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9h8M8 12.5h5"/></svg></span>
           <h3>Prosta komunikacja</h3><p>Rozmawiacie bezpośrednio ze mną. Termin, trasę i stawkę ustalamy przed każdym kursem.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="ladunek">
-    <div class="wrap">
-      <h2 class="sec">Parametry ładunku</h2>
-      <div class="load">
-        <div class="specs">
-          <table>
-            <thead><tr><th>Rodzaj beli</th><th>Średnica</th><th>Waga 1 szt.</th></tr></thead>
-            <tbody>
-              <tr><td>Okrągła, siano</td><td class="num">Ø 1,20 m</td><td class="num">ok. 250 kg</td></tr>
-              <tr><td>Okrągła, siano</td><td class="num">Ø 1,30 m</td><td class="num">ok. 250 kg</td></tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -248,44 +298,111 @@ footer .wrap { display: grid; gap: .4rem; }
 
   <section class="block" id="wspolpraca">
     <div class="wrap">
+      <p class="eyebrow">Krok po kroku</p>
       <h2 class="sec">Jak wygląda współpraca</h2>
       <ol class="steps">
-        <li><b>Kontakt</b><span>Dzwonicie albo piszecie: jakie auta, jakie kierunki.</span></li>
-        <li><b>Ustalenia</b><span>Podaję miejsce załadunku, termin i adres rozładunku. Ustalamy stawkę za kurs.</span></li>
-        <li><b>Załadunek</b><span>Auto podjeżdża na miejsce, ładujemy bokiem i zabezpieczamy ładunek.</span></li>
-        <li><b>Rozliczenie</b><span>Płatność za kurs w ustalonym terminie, na podstawie zlecenia.</span></li>
+        <li>
+          <span class="sq"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span>
+          <b>Kontakt</b><span>Dzwonicie albo piszecie: jakie auta, jakie kierunki.</span>
+        </li>
+        <li>
+          <span class="sq"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8h6V4M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg></span>
+          <b>Ustalenia</b><span>Podaję miejsce załadunku, termin i adres rozładunku. Ustalamy stawkę za kurs.</span>
+        </li>
+        <li>
+          <span class="sq"><svg viewBox="0 0 24 24"><path d="M2 6h12v10H2z"/><path d="M14 9h4l3 3.5V16h-7z"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span>
+          <b>Załadunek</b><span>Auto podjeżdża na miejsce i ładujemy. Ładunek zabezpiecza przewoźnik.</span>
+        </li>
+        <li>
+          <span class="sq"><svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="1.5"/><circle cx="12" cy="12" r="2.8"/><path d="M6 9.5v5M18 9.5v5"/></svg></span>
+          <b>Rozliczenie</b><span>Płatność za kurs w ustalonym terminie, na podstawie zlecenia.</span>
+        </li>
       </ol>
     </div>
   </section>
 
-  <section class="block" id="kontakt">
+  <section class="block" id="pytania">
     <div class="wrap">
-      <h2 class="sec">Kontakt</h2>
-      <p class="who">Patryk Barżykowski · załadunki z całej Polski</p>
-      <div class="cards">
-        <div class="card">
-          <span class="lbl">Telefon / SMS</span>
-          <span class="val" id="tel">666 658 020</span>
-          <div class="row"><a class="btn" href="tel:+48666658020">Zadzwoń</a><button class="copy" type="button" data-copy="tel">Kopiuj numer</button></div>
+      <p class="eyebrow">Pytania przewoźników</p>
+      <h2 class="sec">Najczęstsze pytania</h2>
+      <div class="faq">
+        <div>
+          <h3>Jaki towar jest do przewiezienia?</h3>
+          <p>Sucha pasza dla zwierząt, m.in. siano w belach. Transport paszy i przewóz siana to lekki ładunek: do 10 ton na naczepę.</p>
         </div>
-        <div class="card">
-          <span class="lbl">E-mail</span>
-          <span class="val" id="mail">patryk.barz@o2.pl</span>
-          <div class="row"><a class="btn" href="mailto:patryk.barz@o2.pl?subject=Wsp%C3%B3%C5%82praca%20-%20transport%20bel%20siana">Napisz</a><button class="copy" type="button" data-copy="mail">Kopiuj adres</button></div>
+        <div>
+          <h3>Jaka naczepa jest potrzebna?</h3>
+          <p>Naczepa kurtynowa, czyli firanka 13,6 m, czysta i sucha. Załadunek odbywa się bokiem, po rozsunięciu kurtyny.</p>
+        </div>
+        <div>
+          <h3>Skąd i dokąd są ładunki?</h3>
+          <p>Załadunki z całej Polski, rozładunki w Polsce i w krajach Unii Europejskiej. To zarówno transport krajowy, jak i międzynarodowy.</p>
+        </div>
+        <div>
+          <h3>Dla kogo są te zlecenia transportowe?</h3>
+          <p>Dla firm spedycyjnych, przewoźników i kierowców z własną firanką, którzy szukają stałych frachtów i ładunków do przewiezienia.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="band" id="kontakt">
+    <div class="wrap">
+      <p class="eyebrow">Kontakt</p>
+      <h2 class="sec">Macie wolną firankę?</h2>
+      <a class="bignum" href="tel:+48666658020" id="tel">666 658 020</a>
+      <div class="actions">
+        <a class="btn" href="tel:+48666658020"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Zadzwoń</a>
+        <a class="btn line" href="sms:+48666658020">Wyślij SMS</a>
+        <button class="copy" type="button" data-copy="tel">Kopiuj numer</button>
+      </div>
+      <div class="mailrow">
+        <span class="lbl">E-mail</span>
+        <span id="mail">patryk.barz@o2.pl</span>
+        <a href="mailto:patryk.barz@o2.pl?subject=Wsp%C3%B3%C5%82praca%20-%20transport%20paszy">Napisz</a>
+        <button class="copy" type="button" data-copy="mail">Kopiuj adres</button>
+      </div>
+      <p class="who">Patryk Barżykowski · załadunki z całej Polski</p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>Transport bel siana · cała Polska i kraje UE · Patryk Barżykowski</span>
+    <span>Transport suchej paszy dla zwierząt · cała Polska i kraje UE · Patryk Barżykowski</span>
     <span>Prywatność: strona nie używa plików cookie, formularzy ani narzędzi analitycznych i nie zbiera danych odwiedzających. Serwer hostingu może zapisywać standardowe logi techniczne.</span>
   </div>
 </footer>
 
+<nav class="callbar" aria-label="Szybki kontakt">
+  <a class="btn" href="tel:+48666658020"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Zadzwoń</a>
+  <a class="btn ghost" href="sms:+48666658020">SMS</a>
+</nav>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
 <script>
+// Linki tel:/sms: działają tylko na telefonie. Na komputerze (i w podglądzie) zamiast pustej strony pokazujemy numer i kopiujemy go.
+(function () {
+  var inFrame = window.self !== window.top;
+  var phoneLike = window.matchMedia && matchMedia('(pointer: coarse)').matches;
+  var toast = document.getElementById('toast'), timer;
+  function show(msg) { toast.textContent = msg; toast.hidden = false; clearTimeout(timer); timer = setTimeout(function () { toast.hidden = true; }, 4000); }
+  function tell(msg, text) {
+    show(msg);
+    try { navigator.clipboard.writeText(text).then(function () { show(msg + ' Skopiowano.'); }, function () {}); } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="tel:"], a[href^="sms:"], a[href^="mailto:"]');
+    if (!a) return;
+    var mail = a.getAttribute('href').indexOf('mailto:') === 0;
+    if (!inFrame && (mail || phoneLike)) return;
+    e.preventDefault();
+    if (mail) tell('E-mail: patryk.barz@o2.pl', 'patryk.barz@o2.pl');
+    else tell('Telefon: 666 658 020. Zadzwoń lub wyślij SMS z komórki.', '666 658 020');
+  });
+})();
+
 document.querySelectorAll('.copy').forEach(function (b) {
   var label = b.textContent;
   b.addEventListener('click', function () {
@@ -296,4 +413,5 @@ document.querySelectorAll('.copy').forEach(function (b) {
   });
 });
 </script>
+</body>
 </html>
