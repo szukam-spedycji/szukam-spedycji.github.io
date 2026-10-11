@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://szukam-spedycji.github.io/sitemap.xml
